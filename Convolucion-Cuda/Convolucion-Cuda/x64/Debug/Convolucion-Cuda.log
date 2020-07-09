@@ -1,0 +1,32 @@
+﻿  Compiling CUDA source file convolucion.cu...
+  
+  D:\WorkSpace\Workspace_Cuda\Convolucion-Cuda\Convolucion-Cuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\convolucion.cu.obj "D:\WorkSpace\Workspace_Cuda\Convolucion-Cuda\Convolucion-Cuda\convolucion.cu" 
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(127): warning C4005: 'CALLBACK': macro redefinition
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\common/cpu_bitmap.h(49): warning : conversion from a string literal to "char *" is deprecated
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\common/cpu_anim.h(61): warning : conversion from a string literal to "char *" is deprecated
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\common/gpu_anim.h(61): warning : conversion from a string literal to "char *" is deprecated
+  
+D:/WorkSpace/Workspace_Cuda/Convolucion-Cuda/Convolucion-Cuda/convolucion.cu(30): warning : variable "dy" was declared but never referenced
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(127): warning C4005: 'CALLBACK': macro redefinition
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\common/cpu_bitmap.h(49): warning : conversion from a string literal to "char *" is deprecated
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\common/cpu_anim.h(61): warning : conversion from a string literal to "char *" is deprecated
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\common/gpu_anim.h(61): warning : conversion from a string literal to "char *" is deprecated
+  
+  convolucion.cu
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\common/gpu_anim.h(56): warning C4996: 'cudaGLSetGLDevice': was declared deprecated
+D:\WorkSpace\Workspace_Cuda\Convolucion-Cuda\Convolucion-Cuda\imageLoader.cpp(48): warning C4018: '<': signed/unsigned mismatch
+D:/WorkSpace/Workspace_Cuda/Convolucion-Cuda/Convolucion-Cuda/convolucion.cu(95): warning C4018: '<': signed/unsigned mismatch
+D:/WorkSpace/Workspace_Cuda/Convolucion-Cuda/Convolucion-Cuda/convolucion.cu(96): warning C4018: '<': signed/unsigned mismatch
+D:/WorkSpace/Workspace_Cuda/Convolucion-Cuda/Convolucion-Cuda/convolucion.cu(114): warning C4018: '<': signed/unsigned mismatch
+D:/WorkSpace/Workspace_Cuda/Convolucion-Cuda/Convolucion-Cuda/convolucion.cu(115): warning C4018: '<': signed/unsigned mismatch
+D:/WorkSpace/Workspace_Cuda/Convolucion-Cuda/Convolucion-Cuda/convolucion.cu(133): warning C4018: '<': signed/unsigned mismatch
+D:/WorkSpace/Workspace_Cuda/Convolucion-Cuda/Convolucion-Cuda/convolucion.cu(134): warning C4018: '<': signed/unsigned mismatch
+imageLoader.obj : error LNK2005: "struct imgData __cdecl loadImage(char *)" (?loadImage@@YA?AUimgData@@PEAD@Z) already defined in convolucion.cu.obj
+imageLoader.obj : error LNK2005: "void __cdecl writeImage(char *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct imgData)" (?writeImage@@YAXPEADV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UimgData@@@Z) already defined in convolucion.cu.obj
+     Creating library D:\WorkSpace\Workspace_Cuda\Convolucion-Cuda\x64\Debug\Convolucion-Cuda.lib and object D:\WorkSpace\Workspace_Cuda\Convolucion-Cuda\x64\Debug\Convolucion-Cuda.exp
+D:\WorkSpace\Workspace_Cuda\Convolucion-Cuda\x64\Debug\Convolucion-Cuda.exe : fatal error LNK1169: one or more multiply defined symbols found
